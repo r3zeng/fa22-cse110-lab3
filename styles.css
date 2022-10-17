@@ -1,0 +1,109 @@
+body {
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+}
+
+li.name_list{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: solid;
+    border-color:aliceblue;
+    border-width: 3px;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'area1 area2'
+      'area3 area4';
+    gap: 10px;
+    background-color: #6f8ba1;
+    padding: 10px;
+  }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    flex-shrink: 3;
+}
+
+form{
+    display: grid
+}
+
+div > section {
+    color: brown;
+}
+
+form:hover {
+    background-color: greenyellow;
+}
+
+img{
+    width: 100vw;
+    height: 600px;
+    position: static;
+}
+
+h2, p {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+div p {
+    text-decoration: underline;
+  }
+
+a[href] {
+    background-color: yellow;
+}
+
+a:hover {
+    color: rgb(255, 105, 180);
+}
+
+li + li {
+    background-color: royalblue;
+}
+
+li ~ li {
+    color: rgb(13, 20, 1);
+}
+
+.agenda_list{
+    margin: 10px 10px 10px 10px;
+    border: 5px solid red;;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+#attendees{
+    text-decoration: underline overline;
+    text-align: center;
+    color :blueviolet;
+}
+
+*{
+    visibility: visible;
+}
